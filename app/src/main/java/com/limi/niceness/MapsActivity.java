@@ -1,19 +1,28 @@
 package com.limi.niceness;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.zxing.Result;
 
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class MapsActivity extends AppCompatActivity {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
+
+    private GoogleMap map;
+    private Button btnSatelite;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +55,39 @@ public class MapsActivity extends AppCompatActivity {
             }
             return false;
         });
+
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+        btnSatelite = findViewById(R.id.btnSatelite);
+
+        btnSatelite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+        map = googleMap;
+
+        Antut(googleMap);
+
+    }
+
+    private void Antut(GoogleMap googleMap) {
+        map = googleMap;
+
+        final LatLng punto1 = new LatLng(40.4190531, -3.69361943);
+        final LatLng punto2 = new LatLng(38.4190531, -3.69361943);
+        map.addMarker(new MarkerOptions().position(punto1).title("Madrid-España").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
+        map.addMarker(new MarkerOptions().position(punto1).title("Punto 2").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
     }
 
 

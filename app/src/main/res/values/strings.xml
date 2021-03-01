@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Niceness</string>
+    <string name="btn_singup">Sign Up</string>
+    <string name="btn_login">Login</string>
+    <string name="tv_main1">The best way to meet to people.</string>
+    <string name="tv_main2">Lets get started!</string>
+    <string name="profile_name">HappySmile</string>
+</resources>

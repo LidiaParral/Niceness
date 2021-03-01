@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DatosActivity">
+
+    <ImageView
+        android:id="@+id/ivDatos"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery"/>
+
+    <TextView
+        android:id="@+id/tvTituloD"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivDatos"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Titulo"
+        android:textSize="22sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvDescripcionD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTituloD"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Descripcion"
+        android:textSize="16sp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+       android:text="INSCRIBIR"/>
+
+
+</RelativeLayout>

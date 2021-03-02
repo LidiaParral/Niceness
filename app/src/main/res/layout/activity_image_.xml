@@ -14,7 +14,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@android:drawable/ic_menu_gallery"/>
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
         android:id="@+id/tvTituloD"
@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:text="Titulo"
         android:textSize="22sp"
-        android:textAlignment="center"/>
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/tvDescripcionD"
@@ -35,15 +35,17 @@
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
         android:text="Descripcion"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
+    <!--Si pulsa el botón add añade la foto al Storage Firebase-->
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="48dp"
-       android:text="INSCRIBIR"/>
+        android:background="@drawable/buttonstyle"
+        android:text="ADD" />
 
 
 </RelativeLayout>

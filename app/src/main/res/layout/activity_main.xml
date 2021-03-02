@@ -9,14 +9,15 @@
     <LinearLayout
         android:id="@+id/llLogo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="162dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/logo"
-            />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo" />
 
     </LinearLayout>
 
@@ -25,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/llLogo"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="48dp"
         android:orientation="vertical">
 
         <ImageView
@@ -71,7 +72,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/btn_singup"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/bottomLogin"
@@ -82,7 +83,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="108dp"
         android:text="@string/btn_login"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
 
     <LinearLayout

@@ -23,9 +23,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_logo_launcher_foreground"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_logo_launcher_foreground"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Niceness">
         <activity android:name=".DatosActivity" android:parentActivityName=".AdvertsActivity"/>

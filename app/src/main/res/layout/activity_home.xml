@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,6 +50,7 @@
             android:layout_height="190dp">
 
             <RelativeLayout
+                android:id="@+id/rlTrekk"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -65,16 +66,17 @@
                     android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/btnViewDetailsT"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#613B0A"
                     android:fontFamily="sans-serif"
                     android:padding="20dp"
-                    android:text="expandir" />
+                    android:text="View Details"
+                    android:onClick="DetailsTrekking"/>
 
             </RelativeLayout>
-
 
             <ImageView
                 android:layout_width="150dp"
@@ -84,9 +86,26 @@
                 android:src="@drawable/trekk" />
 
 
+
         </RelativeLayout>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/expandable">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandable"
+                android:lineSpacingExtra="2dp"
+                android:text="TEXTO EXPANDIBLE SI SE APRIETA EL BOTÓN"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
         <RelativeLayout
+            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="190dp">
 
@@ -106,13 +125,15 @@
                     android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/btnViewDetailsTe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#16A2E6"
                     android:fontFamily="sans-serif"
                     android:padding="20dp"
-                    android:text="expandir" />
+                    android:text="View Details"
+                    android:onClick="DetailsTecnology"/>
 
             </RelativeLayout>
 
@@ -126,6 +147,22 @@
 
 
         </RelativeLayout>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/expandable1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandable"
+                android:lineSpacingExtra="2dp"
+                android:text="TEXTO EXPANDIBLE SI SE APRIETA EL BOTÓN"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -147,13 +184,15 @@
                     android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/btnViewDetailsM"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#E3B13B"
                     android:fontFamily="sans-serif"
                     android:padding="20dp"
-                    android:text="expandir" />
+                    android:text="View Details"
+                    android:onClick="DetailsMusic"/>
 
             </RelativeLayout>
 
@@ -167,6 +206,22 @@
 
 
         </RelativeLayout>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/expandable2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandable"
+                android:lineSpacingExtra="2dp"
+                android:text="TEXTO EXPANDIBLE SI SE APRIETA EL BOTÓN"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -189,13 +244,15 @@
                     android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/btnViewDetailsF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#E46D99"
                     android:fontFamily="sans-serif"
                     android:padding="20dp"
-                    android:text="expandir" />
+                    android:text="View Details"
+                    android:onClick="DetailsFood"/>
 
             </RelativeLayout>
 
@@ -209,6 +266,22 @@
 
 
         </RelativeLayout>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/expandable3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandable"
+                android:lineSpacingExtra="2dp"
+                android:text="TEXTO EXPANDIBLE SI SE APRIETA EL BOTÓN"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -231,13 +304,15 @@
                     android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/btnViewDetailsH"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#8E24AA"
                     android:fontFamily="sans-serif"
                     android:padding="20dp"
-                    android:text="expandir" />
+                    android:text="View Details"
+                    android:onClick="DetailsHome"/>
 
             </RelativeLayout>
 
@@ -251,6 +326,21 @@
 
 
         </RelativeLayout>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/expandable4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandable"
+                android:lineSpacingExtra="2dp"
+                android:text="TEXTO EXPANDIBLE SI SE APRIETA EL BOTÓN"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -273,13 +363,15 @@
                     android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/btnViewDetailsAnimals"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:backgroundTint="#84C83C"
                     android:fontFamily="sans-serif"
                     android:padding="20dp"
-                    android:text="expandir" />
+                    android:text="View Details"
+                    android:onClick="DetailsAnimal"/>
 
             </RelativeLayout>
 
@@ -293,6 +385,21 @@
 
 
         </RelativeLayout>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/expandable5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandable"
+                android:lineSpacingExtra="2dp"
+                android:text="TEXTO EXPANDIBLE SI SE APRIETA EL BOTÓN"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
 
     </LinearLayout>

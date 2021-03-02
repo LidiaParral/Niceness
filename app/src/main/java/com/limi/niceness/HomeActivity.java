@@ -4,15 +4,35 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
+
+    Button btnExpT;
+    Button btnExpTe;
+    Button btnExpM;
+    Button btnExpE;
+    Button btnExpH;
+    Button btnExpA;
+
+
+    ExpandableRelativeLayout mycontext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        btnExpT = findViewById(R.id.btnViewDetailsT);
+        btnExpTe = findViewById(R.id.btnViewDetailsTe);
+        btnExpM = findViewById(R.id.btnViewDetailsM);
+
+
+
 
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
@@ -41,5 +61,39 @@ public class HomeActivity extends AppCompatActivity {
             }
             return false;
         });
+    }
+
+    public void DetailsTrekking(View view) {
+        mycontext = findViewById(R.id.expandable);
+        mycontext.toggle();
+
+    }
+
+    public void DetailsTecnology(View view) {
+        mycontext = findViewById(R.id.expandable1);
+        mycontext.toggle();
+
+    }
+
+
+    public void DetailsMusic(View view) {
+        mycontext = findViewById(R.id.expandable2);
+        mycontext.toggle();
+    }
+
+    public void DetailsFood(View view) {
+        mycontext = findViewById(R.id.expandable3);
+        mycontext.toggle();
+    }
+
+
+    public void DetailsHome(View view) {
+        mycontext = findViewById(R.id.expandable4);
+        mycontext.toggle();
+    }
+
+    public void DetailsAnimal(View view) {
+        mycontext = findViewById(R.id.expandable5);
+        mycontext.toggle();
     }
 }

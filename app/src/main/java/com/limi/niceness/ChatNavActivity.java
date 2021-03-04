@@ -7,12 +7,12 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ChatActivity extends AppCompatActivity {
+public class ChatNavActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.activity_chat_nav);
 
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);

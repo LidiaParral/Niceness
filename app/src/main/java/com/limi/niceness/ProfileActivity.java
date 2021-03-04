@@ -31,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity implements ZXingScannerVi
         navigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.Chat:
-                    startActivity(new Intent(getApplicationContext(), ChatActivity.class));
+                    startActivity(new Intent(getApplicationContext(), ChatNavActivity.class));
                     overridePendingTransition(0, 0);
                     return true;
                 case R.id.Advert:

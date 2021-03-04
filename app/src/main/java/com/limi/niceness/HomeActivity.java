@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -19,8 +20,10 @@ public class HomeActivity extends AppCompatActivity {
     Button btnExpH;
     Button btnExpA;
 
-
     ExpandableRelativeLayout mycontext;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
         navigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.Chat:
-                    startActivity(new Intent(getApplicationContext(),ChatActivity.class));
+                    startActivity(new Intent(getApplicationContext(), ChatNavActivity.class));
                     overridePendingTransition(0,0);
                     return true;
                 case R.id.Advert:
@@ -117,4 +120,6 @@ public class HomeActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity5.class);
         startActivity(i);
     }
+
+
 }

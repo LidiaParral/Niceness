@@ -7,17 +7,20 @@ public class Item implements Parcelable {
     private  int idImagen;
     private String titulo;
     private String decription;
+    private String avance;
 
-    public Item(int idImagen, String titulo, String decription) {
+    public Item(int idImagen, String titulo, String decription,String avance) {
         this.idImagen = idImagen;
         this.titulo = titulo;
         this.decription = decription;
+        this.avance = avance;
     }
 
     protected Item(Parcel in) {
         idImagen = in.readInt();
         titulo = in.readString();
         decription = in.readString();
+        avance = in.readString();
     }
 
 
@@ -45,6 +48,8 @@ public class Item implements Parcelable {
         return decription;
     }
 
+    public String getAvance() { return avance; }
+
     @Override
     public int describeContents() {
         return 0;
@@ -55,5 +60,6 @@ public class Item implements Parcelable {
         dest.writeInt(idImagen);
         dest.writeString(titulo);
         dest.writeString(decription);
+        dest.writeString(avance);
     }
 }

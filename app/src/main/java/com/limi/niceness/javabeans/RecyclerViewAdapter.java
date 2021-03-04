@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.limi.niceness.R;
 
 import java.util.ArrayList;
@@ -58,18 +57,21 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public  static  class ItemViewHolder extends RecyclerView.ViewHolder{
         private ImageView imagen;
         private TextView titulo;
-
+        private TextView avance;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             imagen = itemView.findViewById(R.id.imageView);
             titulo = itemView.findViewById(R.id.tvTitulo);
+            avance = itemView.findViewById(R.id.tvAvance);
 
         }
 
         public void bindItem(Item item){
             imagen.setImageResource(item.getIdImagen());
             titulo.setText(item.getTitulo());
+            avance.setText(item.getAvance());
+
         }
     }
 }

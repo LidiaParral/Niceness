@@ -15,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     Button btnExpT;
     Button btnExpTe;
     Button btnExpM;
-    Button btnExpE;
+    Button btnExpF;
     Button btnExpH;
     Button btnExpA;
 
@@ -30,7 +30,9 @@ public class HomeActivity extends AppCompatActivity {
         btnExpT = findViewById(R.id.btnViewDetailsT);
         btnExpTe = findViewById(R.id.btnViewDetailsTe);
         btnExpM = findViewById(R.id.btnViewDetailsM);
-
+        btnExpF = findViewById(R.id.btnViewDetailsF);
+        btnExpH = findViewById(R.id.btnViewDetailsH);
+        btnExpA = findViewById(R.id.btnViewDetailsAnimals);
 
 
 
@@ -67,11 +69,18 @@ public class HomeActivity extends AppCompatActivity {
         mycontext = findViewById(R.id.expandable);
         mycontext.toggle();
 
+        Intent i = new Intent(this, AdvertsActivity.class);
+        startActivity(i);
+
+
     }
 
     public void DetailsTecnology(View view) {
         mycontext = findViewById(R.id.expandable1);
         mycontext.toggle();
+
+        Intent i = new Intent(this, MainActivity3.class);
+        startActivity(i);
 
     }
 
@@ -79,21 +88,33 @@ public class HomeActivity extends AppCompatActivity {
     public void DetailsMusic(View view) {
         mycontext = findViewById(R.id.expandable2);
         mycontext.toggle();
+
+        Intent i = new Intent(this, MainActivity6.class);
+        startActivity(i);
     }
 
     public void DetailsFood(View view) {
         mycontext = findViewById(R.id.expandable3);
         mycontext.toggle();
+
+        Intent i = new Intent(this, MainActivity4.class);
+        startActivity(i);
     }
 
 
     public void DetailsHome(View view) {
         mycontext = findViewById(R.id.expandable4);
         mycontext.toggle();
+
+        Intent i = new Intent(this, MainActivity7.class);
+        startActivity(i);
     }
 
     public void DetailsAnimal(View view) {
         mycontext = findViewById(R.id.expandable5);
         mycontext.toggle();
+
+        Intent i = new Intent(this, MainActivity5.class);
+        startActivity(i);
     }
 }

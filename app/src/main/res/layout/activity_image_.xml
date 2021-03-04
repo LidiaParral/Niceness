@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8004BFBF"
     android:padding="16dp"
     tools:context=".DatosActivity">
 
@@ -23,8 +24,9 @@
         android:layout_below="@id/ivDatos"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:text="Titulo"
-        android:textSize="22sp"
+        android:text="@string/titulo"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textAlignment="center" />
 
     <TextView
@@ -34,7 +36,8 @@
         android:layout_below="@id/tvTituloD"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
-        android:text="Descripcion"
+        android:text="@string/descrip"
+        android:textStyle="normal"
         android:textSize="16sp" />
 
     <!--Si pulsa el botón add añade la foto al Storage Firebase-->
@@ -43,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/buttonstyle"
         android:text="ADD" />
 

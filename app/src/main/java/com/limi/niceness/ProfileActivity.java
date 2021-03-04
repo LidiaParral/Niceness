@@ -75,4 +75,9 @@ public class ProfileActivity extends AppCompatActivity implements ZXingScannerVi
 
         scannerView.resumeCameraPreview(this);
     }
+
+    public void codeqr(View view) {
+        Intent i = new Intent(this, CodeActivity.class);
+        startActivity(i);
+    }
 }

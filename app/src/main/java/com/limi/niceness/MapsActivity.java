@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -19,7 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-
+    EditText etLoc;
     private GoogleMap map;
     private Button btnSatelite;
 
@@ -28,6 +30,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+        etLoc = findViewById(R.id.etLoc);
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
 
@@ -85,10 +88,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         map = googleMap;
 
         final LatLng punto1 = new LatLng(40.4190531, -3.69361943);
-        final LatLng punto2 = new LatLng(38.4190531, -3.69361943);
+        final LatLng punto2 = new LatLng(25.4190531, -3.69361943);
         map.addMarker(new MarkerOptions().position(punto1).title("Madrid-España").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
         map.addMarker(new MarkerOptions().position(punto1).title("Punto 2").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
     }
 
 
+    public void buscar(View view) {
+
+        LatLng LatLng = new LatLng(40.4190531, -3.69361943);
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng,20));
+        map.getFocusedBuilding();
+        map.setTrafficEnabled(true);
+        map.setBuildingsEnabled(true);
+    }
 }

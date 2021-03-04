@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.limi.niceness.javabeans.Datos;
+import com.limi.niceness.javabeans.DatosTrekking;
 import com.limi.niceness.javabeans.Item;
 import com.limi.niceness.javabeans.RecyclerViewAdapter;
 
@@ -58,7 +58,7 @@ public class AdvertsActivity extends AppCompatActivity {
         rv.setLayoutManager(new LinearLayoutManager(this));
 
 
-        final Datos datos = new Datos();
+        final DatosTrekking datos = new DatosTrekking();
         RecyclerViewAdapter ad = new RecyclerViewAdapter(datos.getDatos());
         ad.setListener(v -> {
             int i = rv.indexOfChild(v);

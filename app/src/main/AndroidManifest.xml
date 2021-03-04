@@ -47,12 +47,24 @@
         <activity
             android:name=".AdvertsActivity"
             android:parentActivityName=".HomeActivity" />
-        <activity android:name=".MapsActivity" android:theme="@style/NoActionTheme"></activity>
-        <activity android:name=".ProfileActivity" android:theme="@style/NoActionTheme"></activity>
-        <activity android:name=".ChatNavActivity" android:theme="@style/NoActionTheme"></activity>
-        <activity android:name=".HomeActivity" android:theme="@style/NoActionTheme"></activity>
-        <activity android:name=".inicio.LoginActivity" android:theme="@style/NoActionTheme"></activity>
-        <activity android:name=".inicio.SignUpActivity" android:theme="@style/NoActionTheme"></activity>
+        <activity
+            android:name=".MapsActivity"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".ChatNavActivity"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".inicio.LoginActivity"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".inicio.SignUpActivity"
+            android:theme="@style/NoActionTheme" />
         <activity android:name=".MainActivity" >
         </activity>
         <activity android:name=".inicio.SplashActivity"

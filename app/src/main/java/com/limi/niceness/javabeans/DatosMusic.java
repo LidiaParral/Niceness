@@ -37,7 +37,7 @@ public class DatosMusic {
                         "#Música #DJ #Hardcore","Hago sesiones DJ en directo en mi Facebook,..."));
         datos.add(new Item(R.drawable.m5, "CLASES DE PIANO",
                 "Si quiere aprender a tocar el piano, yo puedo ser su profesor particular." + "\n" +
-                        "Las clases se imparten en L-X de 17:30 a 19:30." +
+                        "Las clases se imparten de L-X de 14:15 a 15:00 - 17:30 a 19:30" +
                         "\n" +"\n" +
                         "#Piano #Teclas #Do #Pentagrama #Música","Si quiere aprender a tocar el piano"));
 

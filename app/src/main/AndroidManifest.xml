@@ -34,7 +34,7 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Niceness">
-
+        <activity android:name=".StorageActivity"/>
         <activity
             android:name=".CodeActivity"
             android:theme="@style/NoActionTheme" />
@@ -44,9 +44,7 @@
         <activity android:name=".MainActivity4" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".DatosActivity" android:parentActivityName=".AdvertsActivity"/>
-        <activity
-            android:name=".AdvertsActivity"
-            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".AdvertsActivity" />
         <activity
             android:name=".MapsActivity"
             android:theme="@style/NoActionTheme" />
@@ -65,8 +63,10 @@
         <activity
             android:name=".inicio.SignUpActivity"
             android:theme="@style/NoActionTheme" />
-        <activity android:name=".MainActivity" >
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionTheme"/>
+
         <activity android:name=".inicio.SplashActivity"
             android:theme="@style/NoActionTheme">
             <intent-filter>

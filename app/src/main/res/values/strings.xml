@@ -18,6 +18,9 @@
     <string name="tv_reset">Al hacer clic en RESTABLECER,              recibirá un correo electrónico para restablecer su contraseña</string>
     <string name="msg_pass">La contraseña debe tener al menos 6 caracteres</string>
     <string name="msj_registrado">Usuario registrado</string>
+    <string name="msj_usuario_con">Usuario conectado</string>
+    <string name="tv_data">Datos del perfil guardado</string>
+    <string name="no_data">Debe introducir todos los datos</string>
     <string name="msj_no_registrado">Usuario no registrado</string>
     <string name="msg_data_reset">Es necesario rellenar el campo requerido</string>
     <string name="msg_revision">Por favor revisa tu correo electrónico</string>
@@ -52,4 +55,6 @@
     <string name="et_localizacion">Introduzca la localizacion</string>
     <string name="btn_buscar">BUSCAR</string>
     <string name="tv_niceness">NiceNess</string>
+    <string name="add_image">ADD</string>
+    <string name="btn_save">Guardar</string>
 </resources>

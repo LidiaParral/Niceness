@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8004BFBF"
     android:padding="16dp"
     tools:context=".DatosActivity">
 
@@ -43,12 +42,15 @@
     <!--Si pulsa el botón add añade la foto al Storage Firebase-->
 
     <Button
+        android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="24dp"
+        style="@style/btn_login"
+        android:onClick="add"
         android:background="@drawable/buttonstyle"
-        android:text="ADD" />
+        android:text="@string/add_image" />
 
 
 </RelativeLayout>

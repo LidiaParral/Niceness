@@ -1,7 +1,28 @@
 <resources>
     <string name="app_name">Niceness</string>
+    //Inicio
+    <string name="et_email">Example@gmail.com</string>
+    <string name="et_password">Password</string>
+    <string name="rd_forgot">Mantenme conectado</string>
+    <string name="btn_login">LOG IN</string>
+    <string name="tv_forgot">FORGOT PASSWORD</string>
+    <string name="btn_signup">SIGN UP</string>
+    <string name="et_emails">Email</string>
+    <string name="et_nombreU">Nombre</string>
+    <string name="s_termin">I have read and accept the Terms and Conditions</string>
+    <string name="msg_no_data">No hay datos</string>
+    <string name="msj_no_accede">No puede acceder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_reset">Reestablecer</string>
+    <string name="tv_reset">Al hacer clic en RESTABLECER,              recibirá un correo electrónico para restablecer su contraseña</string>
+    <string name="msg_pass">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="msj_registrado">Usuario registrado</string>
+    <string name="msj_no_registrado">Usuario no registrado</string>
+    <string name="msg_data_reset">Es necesario rellenar el campo requerido</string>
+    <string name="msg_revision">Por favor revisa tu correo electrónico</string>
     <string name="btn_singup">Sign Up</string>
-    <string name="btn_login">Login</string>
+    <string name="btn_loginU">Login</string>
     <string name="tv_main1">The best way to meet to people.</string>
     <string name="tv_main2">Lets get started!</string>
     <string name="profile_name">HappySmile</string>
@@ -30,4 +51,5 @@
     <string name="satelite">SATÉLITE</string>
     <string name="et_localizacion">Introduzca la localizacion</string>
     <string name="btn_buscar">BUSCAR</string>
+    <string name="tv_niceness">NiceNess</string>
 </resources>

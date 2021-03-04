@@ -71,6 +71,8 @@
         android:layout_marginBottom="168dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        style="@style/btn_sign"
+        android:onClick="signUpM"
         android:text="@string/btn_singup"
         android:textSize="18sp"/>
 
@@ -78,10 +80,11 @@
         android:id="@+id/bottomLogin"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/azule"
+        style="@style/btn_login"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="108dp"
+        android:onClick="loginM"
         android:text="@string/btn_login"
         android:textSize="18sp"/>
 

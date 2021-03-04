@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azule"
+    android:padding="@dimen/padding"
+    tools:context=".inicio.SignUpActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogS"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="53dp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:textColor="#B0FFFFFF"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/btn_login"
+        android:textSize="14sp"
+        android:onClick="loginS">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        style="@style/btn_signup"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/btn_signup"
+        android:textColor="@color/azule"
+        android:textSize="14sp">
+</com.google.android.material.button.MaterialButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        app:cardBackgroundColor="@color/cardviewS"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="@dimen/txt"
+                    android:hint="@string/et_nombre" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="@dimen/txt"
+                    android:hint="@string/et_emails"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="@dimen/txt"
+                    android:hint="@string/et_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Switch
+        android:id="@+id/switchS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cdDatos"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="11sp"
+        android:text="@string/s_termin"
+        android:textColor="@color/white"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignS"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/switchS"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="@dimen/txt"
+        android:text="@string/btn_signup"
+        style="@style/btn_signup"
+        android:textColor="@color/azule"
+        android:onClick="signUpS">
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

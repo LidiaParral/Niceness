@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicio.LoginActivity"
+    android:background="@color/white"
+    android:padding="@dimen/padding">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLog"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/btn_login"
+        style="@style/btn_login"
+        android:textSize="14sp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSign"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/btn_signup"
+        android:textSize="14sp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:textColor="@color/grey"
+        android:onClick="signUp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <LinearLayout
+        android:id="@+id/llDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_below="@id/btnLog"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D5FFFFFF"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/txt"
+            android:hint="@string/et_email"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        android:layout_marginTop="23dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D6FFFFFF"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/txt"
+            android:hint="@string/et_password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/rdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@id/llDatos"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/rd_forgot"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        style="@style/btn_login"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/rdButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_login"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="@dimen/txt"
+        android:onClick="login">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/tvResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/tv_forgot"
+        android:textColor="@color/azulOsc"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="42dp"
+        android:onClick="restablecer"/>
+
+</RelativeLayout>

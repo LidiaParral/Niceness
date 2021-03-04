@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="btn_signup" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="strokeColor">@color/azulCla</item>
+    </style>
+    <style name="btn_login" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/azule</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="strokeColor">@color/azulOsc</item>
+    </style>
+
+    <style name="hola" parent="Widget.Design.AppBarLayout">
+        <item name="android:radius">30dp</item>
+        <item name="strokeColor">@color/azulOsc</item>
+
+    </style>
+
+    <style name="btn_sign" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/orange</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="strokeColor">@color/white</item>
+
+    </style>
+
+    <style name="MenuStyle">hola</style>
+</resources>

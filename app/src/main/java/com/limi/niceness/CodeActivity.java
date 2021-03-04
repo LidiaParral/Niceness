@@ -11,14 +11,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.zxing.Result;
 import com.google.zxing.WriterException;
 
 import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class CodeActivity extends AppCompatActivity {
+public class CodeActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler{
 
     String TAG = "GenerateQR";
     EditText et;
@@ -27,6 +30,8 @@ public class CodeActivity extends AppCompatActivity {
     Button btn;
     Bitmap bitmap;
     QRGEncoder qrgEncoder;
+
+    private ZXingScannerView scannerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,4 +70,30 @@ public class CodeActivity extends AppCompatActivity {
 
 
     }
+
+
+
+    public void escanear(View view) {
+
+        scannerView = new ZXingScannerView(this);
+        setContentView(scannerView);
+        scannerView.setResultHandler(this);
+        scannerView.startCamera();
+
+    }
+
+    @Override
+    public void handleResult(Result result) {
+
+        Log.v("HandleResult", result.getText());
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Resultado del scan");
+        builder.setMessage(result.getText());
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+
+        scannerView.resumeCameraPreview(this);
+    }
+
 }

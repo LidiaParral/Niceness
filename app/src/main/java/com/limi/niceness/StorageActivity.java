@@ -51,12 +51,9 @@ public class StorageActivity extends AppCompatActivity  implements  View.OnClick
 
         etName = findViewById(R.id.etName);
         etDes = findViewById(R.id.etLastname);
-        ivImage = findViewById(R.id.ivImage);
 
         storageReference = FirebaseStorage.getInstance().getReference();
 
-        tvName = findViewById(R.id.tvNameShow);
-        tvDes = findViewById(R.id.tvLastnameShow);
         ivImageShow = findViewById(R.id.ivImageShow);
 
         btnAdd = findViewById(R.id.idAddImage);

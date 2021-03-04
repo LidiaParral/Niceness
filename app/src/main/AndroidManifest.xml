@@ -44,7 +44,7 @@
         <activity android:name=".MainActivity4" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".DatosActivity" android:parentActivityName=".AdvertsActivity"/>
-        <activity android:name=".AdvertsActivity" />
+        <activity android:name=".AdvertsActivity" android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".MapsActivity"
             android:theme="@style/NoActionTheme" />

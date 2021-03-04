@@ -28,10 +28,4 @@
 
     <style name="MenuStyle">hola</style>
 
-    <style name="NoActionTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/azule</item>
-        <item name="colorPrimaryDark">@color/orange</item>
-        <item name="colorAccent">@color/azulCla</item>
-    </style>
 </resources>

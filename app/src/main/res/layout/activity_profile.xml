@@ -47,6 +47,7 @@
 
 
             <LinearLayout
+                android:id="@+id/llCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -125,53 +126,19 @@
 
         </com.google.android.material.card.MaterialCardView>
 
+
+
     </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/btnLlButton"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rlProfile"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
-        android:orientation="horizontal"
-        android:paddingHorizontal="16dp"
-        android:weightSum="6">
-
-        <Button
-            android:id="@+id/btnEscanear"
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rlProfile"
-            android:layout_gravity="left|center"
-            android:layout_weight="5"
-            android:background="@drawable/buttonstyle"
-            android:backgroundTint="@color/orange"
-            android:onClick="escanear"
-            android:text="@string/btn_escanear"
-            android:textColor="@color/white" />
-
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="match_parent"
-            android:layout_below="@id/btnEscanear"
-            android:layout_weight="1"
-            android:background="@mipmap/codeqr"
-            android:onClick="codeqr"/>
-
-
-    </LinearLayout>
 
 
     <LinearLayout
         android:id="@+id/llDatos"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnLlButton"
+        android:layout_below="@id/rlProfile"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="45dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -265,6 +232,18 @@
 
         </LinearLayout>
     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnQR"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/llDatos"
+        android:background="@mipmap/codeqr"
+        android:onClick="codeqr"/>
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

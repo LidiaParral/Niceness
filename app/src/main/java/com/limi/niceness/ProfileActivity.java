@@ -1,22 +1,17 @@
 package com.limi.niceness;
 
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.zxing.Result;
 
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class ProfileActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class ProfileActivity extends AppCompatActivity  {
 
-    private ZXingScannerView scannerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,29 +47,6 @@ public class ProfileActivity extends AppCompatActivity implements ZXingScannerVi
         });
     }
 
-
-    public void escanear(View view) {
-
-        scannerView = new ZXingScannerView(this);
-        setContentView(scannerView);
-        scannerView.setResultHandler(this);
-        scannerView.startCamera();
-
-    }
-
-    @Override
-    public void handleResult(Result result) {
-
-        Log.v("HandleResult", result.getText());
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Resultado del scan");
-        builder.setMessage(result.getText());
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-
-
-        scannerView.resumeCameraPreview(this);
-    }
 
     public void codeqr(View view) {
         Intent i = new Intent(this, CodeActivity.class);

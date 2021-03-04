@@ -34,12 +34,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src ="@android:drawable/ic_input_add"/>
-
-        <ImageView
-            android:id="@+id/ivImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"/>
         <!--android:adjustViewBounds="true" // Ajustar a los límites de la vista-->
     </LinearLayout>
 
@@ -50,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/llButtonImage"
         android:layout_marginTop="24dp"
+        style="@style/btn_sign"
         android:text="@string/btn_save"/>
 
 

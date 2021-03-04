@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CodeActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,5 +40,19 @@
         android:text="@string/btn_codeqr"
         android:layout_below="@id/etNombre"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20sp" />
+        android:layout_marginTop="20sp"
+        style="@style/btn_sign"/>
+
+
+    <Button
+        android:id="@+id/btnEscanear"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="48dp"
+        android:layout_centerInParent="true"
+        style="@style/btn_login"
+        android:onClick="escanear"
+        android:text="@string/btn_escanear"
+        android:textColor="@color/white" />
 </RelativeLayout>

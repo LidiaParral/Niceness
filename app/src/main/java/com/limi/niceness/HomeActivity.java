@@ -69,8 +69,12 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void DetailsTrekking(View view) {
+
         mycontext = findViewById(R.id.expandable);
-        mycontext.toggle();
+        mycontext.collapse();
+        if(btnExpT.isClickable()) {
+            mycontext.expand();
+        }
 
         Intent i = new Intent(this, AdvertsActivity.class);
         startActivity(i);

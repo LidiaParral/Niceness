@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.limi.niceness.MainActivity;
 import com.limi.niceness.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -34,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashActivity
-                        .this, LoginActivity.class);
+                        .this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }

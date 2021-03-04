@@ -65,7 +65,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     private void registroUser(final String username, String emails, String pass) {
 
-        fba.signInWithEmailAndPassword(emails, pass)
+        fba.createUserWithEmailAndPassword(emails, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

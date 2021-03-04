@@ -1,5 +1,6 @@
 package com.limi.niceness;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -11,13 +12,20 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
 
@@ -25,13 +33,13 @@ public class StorageActivity extends AppCompatActivity  implements  View.OnClick
 
     private static final int PICK_NAME_REQUEST = 1;
     EditText etName;
-    EditText etLastname;
+    EditText etDes;
     ImageView ivImage;
     ImageButton btnAdd;
     Button btnSave;
 
     TextView tvName;
-    TextView tvLastname;
+    TextView tvDes;
     ImageView ivImageShow;
 
     private Uri uri;
@@ -42,13 +50,13 @@ public class StorageActivity extends AppCompatActivity  implements  View.OnClick
         setContentView(R.layout.activity_storage);
 
         etName = findViewById(R.id.etName);
-        etLastname = findViewById(R.id.etLastname);
+        etDes = findViewById(R.id.etLastname);
         ivImage = findViewById(R.id.ivImage);
 
         storageReference = FirebaseStorage.getInstance().getReference();
 
         tvName = findViewById(R.id.tvNameShow);
-        tvLastname = findViewById(R.id.tvLastnameShow);
+        tvDes = findViewById(R.id.tvLastnameShow);
         ivImageShow = findViewById(R.id.ivImageShow);
 
         btnAdd = findViewById(R.id.idAddImage);
@@ -63,13 +71,44 @@ public class StorageActivity extends AppCompatActivity  implements  View.OnClick
 
     private void showFileAdd(){
         Intent i = new Intent();
-        i.setType("image/*");
+        i.setType("image/jpeg");
         i.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(Intent.createChooser(i,"Selecciona una imagem"), PICK_NAME_REQUEST);
     }
 
     private void uploadFile(){
-        S
+        if(uri != null) {
+
+            ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setTitle("Subiendo....");
+            progressDialog.show();
+
+            final StorageReference refer = storageReference.child(uri.getEncodedPath());
+
+            refer.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    progressDialog.dismiss();
+                    Toast.makeText(getApplicationContext(),"Archivo subido",Toast.LENGTH_LONG).show();
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    progressDialog.dismiss();
+                    Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
+
+                }
+            }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onProgress(UploadTask.TaskSnapshot snapshot) {
+                    double progress = (100.0 * snapshot.getBytesTransferred())/snapshot.getTotalByteCount();
+                    progressDialog.setMessage(((int) progress) + "% Subiendo...");
+                }
+            });
+
+        }else{
+
+        }
     }
 
 
@@ -94,6 +133,8 @@ public class StorageActivity extends AppCompatActivity  implements  View.OnClick
             showFileAdd();
 
         } else if(v == btnSave){
+            uploadFile();
+
 
         }
     }

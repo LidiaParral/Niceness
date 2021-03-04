@@ -53,33 +53,11 @@
         android:text="@string/btn_save"/>
 
 
-    <TextView
-        android:id="@+id/tvData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_below="@id/btnSave"
-        android:text="@string/tv_data"/>
-
-    <TextView
-        android:id="@+id/tvNameShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/tvData"/>
-
-    <TextView
-        android:id="@+id/tvLastnameShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/tvNameShow"/>
-
     <ImageView
         android:id="@+id/ivImageShow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvLastnameShow"
+        android:layout_below="@id/btnSave"
         android:adjustViewBounds="true"/>
 
 

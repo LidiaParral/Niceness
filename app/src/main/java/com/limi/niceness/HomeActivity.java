@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
 
     ExpandableRelativeLayout mycontext;
 
-
+    FloatingActionButton fabC;
 
 
     @Override
@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
         btnExpF = findViewById(R.id.btnViewDetailsF);
         btnExpH = findViewById(R.id.btnViewDetailsH);
         btnExpA = findViewById(R.id.btnViewDetailsAnimals);
-
+        fabC = findViewById(R.id.fabBottom);
 
 
 
@@ -126,4 +126,8 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
+    public void chatBoot(View view) {
+        Intent i = new Intent(this,ChatActivity.class);
+        startActivity(i);
+    }
 }

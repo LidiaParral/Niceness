@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.limi.niceness">
 
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -34,6 +35,26 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Niceness">
+
+
+        <service android:name=".notificaciones.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".notificaciones.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".inicio.RestPasswordActivity" />
         <activity android:name=".StorageActivity"/>
         <activity
             android:name=".CodeActivity"
@@ -84,6 +105,16 @@
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyAGSR4mvjjRqDLkV-_4pTHWyqNDSUgRqNo"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.here.this.library.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities" />
+
     </application>
+
+
 
 </manifest>

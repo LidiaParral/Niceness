@@ -405,6 +405,31 @@
 
     </ScrollView>
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        tools:context=".MainActivityC">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/robot"
+            android:layout_margin="45dp"
+            android:onClick="chatBoot"
+            android:backgroundTint="#057782"
+            app:maxImageSize="40dp"
+            app:fabCustomSize="60dp"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 

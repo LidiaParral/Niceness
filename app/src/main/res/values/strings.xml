@@ -54,7 +54,13 @@
     <string name="satelite">SATÉLITE</string>
     <string name="et_localizacion">Introduzca la localizacion</string>
     <string name="btn_buscar">BUSCAR</string>
-    <string name="tv_niceness">NiceNess</string>
     <string name="add_image">ADD</string>
     <string name="btn_save">Guardar</string>
+    <string name="tv_niceness">NiceNess</string>
+    <string name="et_hint_mensaje">Escribe la consulta</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="tv_texto">Hola</string>
+    <string name="tv_username">username</string>
+    <string name="tv_perfil">Perfil</string>
+    <string name="et_buscar">Buscar...</string>
 </resources>

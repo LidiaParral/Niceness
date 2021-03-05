@@ -83,16 +83,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private void Antut(GoogleMap googleMap) {
         map = googleMap;
 
-        final LatLng punto1 = new LatLng(40.4190531, -3.69361943);
+
         final LatLng punto2 = new LatLng(25.4190531, -3.69361943);
-        map.addMarker(new MarkerOptions().position(punto1).title("Madrid-España").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
-        map.addMarker(new MarkerOptions().position(punto1).title("Punto 2").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        map.addMarker(new MarkerOptions().position(punto2).title("Punto 2").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
     }
 
 
     public void buscar(View view) {
 
         LatLng LatLng = new LatLng(40.4190531, -3.69361943);
+        map.addMarker(new MarkerOptions().position(LatLng).title("Madrid-España").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng,20));
         map.getFocusedBuilding();
         map.setTrafficEnabled(true);

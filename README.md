@@ -9,8 +9,7 @@
  
  Sign Up |
  --------|
-
- | ![](img/signup.mp4)|
+![](img/signup.mp4)|
 
 *Adverts* | *Maps*
  ------ | ------

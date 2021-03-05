@@ -3,8 +3,8 @@
 [lidia](https://github.com/LidiaParral)
 
 
-*Splash* | *Login* | *Sign Up* |
-  ----- |----- | ------ |
+Splash | Login | Sign Up |
+------ | ------ | ------ |
 ![](img/splash.mp4) | ![](img/login.jpg) | ![](img/signup.jpg)|
 
  *Categories* | *Adverts* | *Maps*

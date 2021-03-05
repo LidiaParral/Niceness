@@ -3,9 +3,14 @@
 [lidia](https://github.com/LidiaParral)
 
 
- Login | Sign Up 
- ------ | ------ |
- ![](img/login.jpg) | ![](img/signup.jpg)|
+ Login | 
+ ------ |
+ ![]https://user-images.githubusercontent.com/72860314/110061788-751f7a00-7d68-11eb-8bbf-2c21ad16db37.mp4
+ 
+ Sign Up |
+ --------|
+
+ | ![](img/signup.mp4)|
 
 *Adverts* | *Maps*
  ------ | ------

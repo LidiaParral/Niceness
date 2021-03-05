@@ -10,8 +10,6 @@
 
  *Categories* | *Adverts* | *Maps*
  ------ | ------ | ------
-![categories](https://user-images.githubusercontent.com/72860314/110062635-ead81580-7d69-11eb-8e24-440979eafa75.gif)
- | ![adverts](https://user-images.githubusercontent.com/72860314/110062643-ef9cc980-7d69-11eb-8665-de2fc5ba7b8e.gif)
- | ![maps](https://user-images.githubusercontent.com/72860314/110062708-12c77900-7d6a-11eb-8103-19ee5a5927ff.gif)
+![categories](https://user-images.githubusercontent.com/72860314/110062635-ead81580-7d69-11eb-8e24-440979eafa75.gif) | ![adverts](https://user-images.githubusercontent.com/72860314/110062643-ef9cc980-7d69-11eb-8665-de2fc5ba7b8e.gif) | ![maps](https://user-images.githubusercontent.com/72860314/110062708-12c77900-7d6a-11eb-8103-19ee5a5927ff.gif)
 
 

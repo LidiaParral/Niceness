@@ -239,7 +239,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:layout_below="@id/llDatos"
         android:background="@mipmap/codeqr"
         android:onClick="codeqr"/>

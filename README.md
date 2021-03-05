@@ -3,10 +3,10 @@
 [lidia](https://github.com/LidiaParral)
 
 
-Splash | Login | Sign Up |
------- | ------ | ------ |
+ Login | Sign Up 
+ ------ | ------ |
  ![](img/login.jpg) | ![](img/signup.jpg)|
 
- *Categories* | *Adverts* | *Maps*
- ------ | ------ | ------
+*Adverts* | *Maps*
+ ------ | ------
 ![](img/adverts.jpg) | ![](img/maps.jpg)|

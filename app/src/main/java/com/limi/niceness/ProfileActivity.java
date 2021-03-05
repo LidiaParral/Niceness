@@ -25,10 +25,6 @@ public class ProfileActivity extends AppCompatActivity  {
 
         navigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.Chat:
-                    startActivity(new Intent(getApplicationContext(), ChatNavActivity.class));
-                    overridePendingTransition(0, 0);
-                    return true;
                 case R.id.Advert:
                     startActivity(new Intent(getApplicationContext(), AdvertsActivity.class));
                     overridePendingTransition(0, 0);

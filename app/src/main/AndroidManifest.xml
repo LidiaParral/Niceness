@@ -36,23 +36,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Niceness">
 
-
-        <service android:name=".notificaciones.MyFirebaseIdService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
-        <service android:name=".notificaciones.MyFirebaseMessaging"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-
-        <activity android:name=".MessageActivity" />
         <activity android:name=".ChatActivity"/>
         <activity android:name=".inicio.RestPasswordActivity" />
         <activity android:name=".StorageActivity"/>
@@ -71,9 +54,6 @@
             android:theme="@style/NoActionTheme" />
         <activity
             android:name=".ProfileActivity"
-            android:theme="@style/NoActionTheme" />
-        <activity
-            android:name=".ChatNavActivity"
             android:theme="@style/NoActionTheme" />
         <activity
             android:name=".HomeActivity"

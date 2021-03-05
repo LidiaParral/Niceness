@@ -29,10 +29,6 @@ public class AdvertsActivity extends AppCompatActivity {
 
         navigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()){
-                case R.id.Chat:
-                    startActivity(new Intent(getApplicationContext(), ChatNavActivity.class));
-                    overridePendingTransition(0,0);
-                    return true;
                 case R.id.Home:
                     startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                     overridePendingTransition(0,0);

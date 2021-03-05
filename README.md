@@ -5,9 +5,7 @@
 
 *Splash* | *Login* | *Sign Up* |
   ----- |----- | ------ |
-![splash](https://user-images.githubusercontent.com/72860314/110062615-e14ead80-7d69-11eb-8174-4423c5022939.gif)
- | ![login](https://user-images.githubusercontent.com/72860314/110062366-6be2dd00-7d69-11eb-8c2d-7d1e4cea437d.gif)
- | ![signup](https://user-images.githubusercontent.com/72860314/110062625-e57acb00-7d69-11eb-9676-0543dcbd71f1.gif)
+![splash](https://user-images.githubusercontent.com/72860314/110062615-e14ead80-7d69-11eb-8174-4423c5022939.gif) | ![login](https://user-images.githubusercontent.com/72860314/110062366-6be2dd00-7d69-11eb-8c2d-7d1e4cea437d.gif)  | ![signup](https://user-images.githubusercontent.com/72860314/110062625-e57acb00-7d69-11eb-9676-0543dcbd71f1.gif)
 
 
  *Categories* | *Adverts* | *Maps*

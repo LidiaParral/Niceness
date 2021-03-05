@@ -3,16 +3,12 @@
 [lidia](https://github.com/LidiaParral)
 
 
- Login | 
- ------ |
-![login]https://user-images.githubusercontent.com/72860314/110061944-b6178e80-7d68-11eb-85f7-79ab8cb5fcfb.mp4
+*Splash* | *Login* | *Sign Up* |
+  ----- |----- | ------ |
+![](img/splash.mp4) | ![]![login](https://user-images.githubusercontent.com/72860314/110062366-6be2dd00-7d69-11eb-8c2d-7d1e4cea437d.gif)
+ | ![](img/signup.jpg)|
 
+ *Categories* | *Adverts* | *Maps*
+ ------ | ------ | ------
+![](img/categories.mp4) | ![](img/adverts.jpg) | ![](img/maps.jpg)|
 
- 
- Sign Up |
- --------|
-![](img/signup.mp4)|
-
-*Adverts* | *Maps*
- ------ | ------
-![](img/adverts.jpg) | ![](img/maps.jpg)|

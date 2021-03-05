@@ -1,6 +1,6 @@
 # Niceness
 [mica](https://github.com/micaela1830)
-[lidia] (https://github.com/LidiaParral)
+[lidia](https://github.com/LidiaParral)
 
 
 *Splash* | *Login* | *Sign Up* |
